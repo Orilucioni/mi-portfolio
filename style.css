@@ -93,7 +93,7 @@ li :active {
 
 .presentacion {
     margin: 3%;
-    margin-top: 10%;
+    margin-top: 4%;
     padding: 3%;
     display: flex;
     flex-direction: column;
@@ -115,21 +115,23 @@ li :active {
     color: #97D8B2;
     border-radius: 30px;
     border: solid #440f44;
-    width: 30%;
-    padding: 2% 3%;
-    text-align: center;
-    font-size: 1.4em;
+    width: 24%;
+    padding: 2% 6%;
+    font-size: 1.3em;
 }
-.lo-que-hago :hover {
-    background-color: #6c1d6c;;
-    
+.lo-que-hago:hover {
+    background-color: #6c1d6c;
+    border: 1px solid  #6c1d6c;
+}
+.lo-que-hago:active {
+    background-color: #27051e;
 }
 
 figure {
     width: 395px;
     height: 310px;
     display: flex;
-    margin-top: 10%;
+    margin-top: 4%;
 }
 img {
     width: 100%;
@@ -138,6 +140,31 @@ img {
     object-position: center;
     object-fit: cover;
     border-radius: 5%;
+}
+@media (max-width: 1123px) {
+    .container-presentacion {
+        flex-direction: column;
+        text-align: center;
+        align-items: center
+    }
+}
+@media (max-width:758px) {
+    h1 {
+        font-size: 3em;
+    }
+    figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-shrink: 1;
+    }
+}
+
+@media (max-width:361px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    
 }
 
 
