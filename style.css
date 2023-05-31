@@ -85,27 +85,49 @@ li :active {
 -moz-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
 }
 
-
+.container-presentacion {
+    display: flex;
+    margin: 8%;
+}
 
 
 .presentacion {
     margin: 3%;
     margin-top: 10%;
     padding: 3%;
+    display: flex;
+    flex-direction: column;
 }
 
+.presentacion h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+   
+}
+.presentacion h1 {
+    margin-top: 0;
+    margin-bottom: 2%;
+    font-weight: bolder;
+}
 
-.lo-que-me-gusta {
-    background-color: #531253;
+.lo-que-hago {
+    background-color: #440f44;
     color: #97D8B2;
     border-radius: 30px;
-    border: solid #531253;
-    width: 40%;
+    border: solid #440f44;
+    width: 30%;
+    padding: 2% 3%;
+    text-align: center;
+    font-size: 1.4em;
+}
+.lo-que-hago :hover {
+    background-color: #6c1d6c;;
+    
 }
 
 figure {
-    width: 300px;
-    height: 300px;
+    width: 395px;
+    height: 310px;
     display: flex;
     margin-top: 10%;
 }
@@ -115,7 +137,7 @@ img {
     margin-top: 10%;
     object-position: center;
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 
