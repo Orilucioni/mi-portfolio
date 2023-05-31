@@ -32,26 +32,61 @@ a {
     color:#97D8B2
 }
 
+
+
 header {
     display: flex;
     justify-content: flex-end;
     box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
-
+position: sticky;
+top: 0;
+z-index: 2;
+background-color:#1e0418;
 }
 nav {
     display: flex;
-    margin: 2%;
-    margin-right: 20%;
+    margin: 1%;
+    width: 100%;
+    justify-content: flex-end;
+    
 }
 .nav-lista {
     display: flex;
+    width: 100%;
     font-size: 1.2em;
+    justify-content: flex-end;
+    margin: 0 ;
+    margin-right: 15%;
+
 }
 .nav-lista li{
-    padding: 2%;
+    display: flex;
+    padding: 2% 4%;
+    width: 30%;
 }
+.nav-lista a {
+    padding: 4% 10%;
+}
+
+.nav-a-contacto {
+    background-color: #711771;
+    border-radius: 20px;
+}
+
+li :hover {
+    color:#deffec;
+}
+li :active {
+    border-radius: 20px;
+    box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
+-webkit-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
+-moz-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
+}
+
+
+
 
 .presentacion {
     margin: 3%;
