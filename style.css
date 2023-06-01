@@ -18,6 +18,7 @@ h2 {
     font-size: 3em ;
     font-weight: bold;
 }
+
 h1 {
     font-size: 4em;
     color: rgb(255, 255, 255);
@@ -32,19 +33,25 @@ a {
     color:#97D8B2
 }
 
-
+@media (max-width: 615px)
+{
+    h2 {
+        font-size: 2.5em;
+    }
+} 
 
 header {
     display: flex;
     justify-content: flex-end;
     box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
-position: sticky;
-top: 0;
-z-index: 2;
-background-color:#1e0418;
-}
+    -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color:#1e0418;
+    }
+
 nav {
     display: flex;
     margin: 1%;
@@ -156,7 +163,7 @@ img {
         width: 100%;
         height: 100%;
         display: flex;
-        flex-shrink: 1;
+        flex-shrink: 4;
     }
 }
 
@@ -175,7 +182,10 @@ img {
     align-items: center;
     text-align: center;
     margin: 5%;
-    
+}
+
+.container-mis-conocimientos p{
+    width:30%;
 }
 .container-mis-conocimientos div {
     display: flex;
@@ -210,7 +220,7 @@ img {
     text-align: center;
     background-color: #531253;
 }
-.container-cita h2{
+.cita-titulo{
     font-size: 2em;
     
 }
@@ -225,7 +235,7 @@ img {
     }
 }
 @media (max-width:600px) {
-    .h2 {
+    .cita-titulo {
        font-size: 0.8em; }
 }
 
@@ -235,19 +245,25 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10%;
     text-align: center;
+    padding-top: 10%;
 }
 .container-mis-proyectos {
     display: flex;
-    align-content: center;
     flex-wrap: wrap;
+    width: 85%
     
 }
 
+.mis-proyectos p {
+    width: 30%;
+    margin-bottom: 4%;
+    margin-top: 0;
+}
+
 .mis-proyectos article {
-    background-color:#711771;
-    border:#97D8B2 solid 1px ;
+    background-color:#6c1d6c;
+    border:#6c1d6c solid 1px ;
     border-radius: 10px;
     box-shadow: 10px 10px 37px 0px rgba(0,0,0,0.42);
     -webkit-box-shadow: 10px 10px 37px 0px rgba(0,0,0,0.42);
@@ -258,15 +274,22 @@ img {
     flex-direction: column;
     align-items: center;
     
+    
 
+}
+.mis-proyectos article:hover {
+    border: 1px #97D8B2 solid;
 }
 .mis-proyectos figure {
     margin: 0;
-    width: 240px;
+    width: 290px;
     height: 200px;
+    padding: 4% 2%;
+    display: flex;
+    
 }
 .mis-proyectos img {
-    background-color:#711771;
+    background-color:#6c1d6c;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -274,20 +297,39 @@ img {
     object-fit: cover;
 }
 
-
-
-.mis-proyectos article:hover {
+.mis-proyectos article :hover article:not (h3){
     border: #97D8B2 solid 1px;
     color:aliceblue;
 }
 
+.mis-proyectos article :focus {
+    box-shadow: 0px 0px 2px 10px rgba(151,216,178,0.1);
+    -webkit-box-shadow: 0px 0px 2px 10px rgba(151,216,178,0.1);
+    -moz-box-shadow: 0px 0px 2px 10px rgba(151,216,178,0.1);
+    
+}
+/* 
+@media (max-width:1245px) {
+    .mis-proyectos figure {
+        flex-shrink: 5;
+    }
+    .mis-proyectos article {
+        flex-shrink: 5;
+    }
+    
+} */
 
 
 
+.container-contactame-escribeme , .contactame , .escribeme , #form-contact{
+    display: flex;
+}
 
+.contactame , .escribeme , #form-contact {
+    flex-direction: column;
+}
 
 .container-contactame-escribeme {
-    display: flex;
     background-color: #711771;
     margin: 8%;
     border-radius: 10px;
@@ -298,8 +340,6 @@ img {
 }
 
 .contactame {
-    display: flex;
-    flex-direction: column;
     margin: 5%;
     width: 50%;
 }
@@ -313,45 +353,37 @@ img {
     padding: 5%;
 }
 
-
-
 .escribeme {
-    display: flex;
     margin: 5%;
     width: 50%;
-    flex-direction: column;  
+}
+
+input , textarea {
+    margin: 3% 0%;
+    color: #000000;
+    background-color: #ccfadb;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 0.8em;
+    padding: 3%;
 }
 
 input {
-    margin: 3% 0%;
-    color: #000000;
-    background-color: #ccfadb;
     border: #ccfadb 1px solid;
     border-radius: 20px;
-    width: 100%;
-    font-size: 0.8em;
-    padding: 3%;
 }
-textarea {
-    margin: 3% 0%;
-    color: #000000;
-    background-color: #ccfadb;
-    resize: none;
-    border-radius: 20px;
-    width: 100%;
-    height: 150px;
-    font-size: 0.8em;
-    padding: 3%;
 
+textarea {
+    resize: none;
+    height: 150px;
 }
+
 label {
     margin: 2%;
     font-size: 0.8em;
 }
 
 #form-contact {
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
     font-size: 1.4em;
     padding: 1%;
@@ -415,42 +447,35 @@ label {
     .container-contactame-escribeme p {
         width: 95%;
     }
-    .container-contactame-escribeme h2 {
-        font-size: 2.5em;
-    }
 }
 
 
 
 
 
+footer , .lista-footer-hola , .lista-footer-iconos {
+    display: flex; 
+    justify-content: center;
+}
 
 footer {
     background-color: #531253;
-    height: 40%;
     border: #531253 solid ;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .lista-footer-hola {
-    display: flex;
-    justify-content: center;
     width: 70%;
-    
+    margin-top: 6%;  
 }
 
 .lista-footer-iconos {
-    display: flex;
     width: 20%;
-    justify-content: center;
 }
 
 .lista-footer-hola li {
     padding: 0 3%;
-
 }
 
 .lista-footer-iconos li {
@@ -467,16 +492,18 @@ footer {
 }
 
 .footer-parrafo {
-    font-size: 18px;
+    font-size: 1.3em;
+    margin-bottom: 4%;
 }
 .lista-footer-iconos i:hover {
     background-color: #531253;
     color: #97D8B2;
+    border: 1px solid #97D8B2;
 }
 .lista-footer-iconos i:active {
-    box-shadow: 0px 0px 14px 4px rgba(255,255,255,0.75);
--webkit-box-shadow: 0px 0px 14px 4px rgba(255,255,255,0.75);
--moz-box-shadow: 0px 0px 14px 4px rgba(255,255,255,0.75);
+    box-shadow: 0px 0px 2px 10px rgba(151,216,178,0.1);
+    -webkit-box-shadow: 0px 0px 2px 10px rgba(151,216,178,0.1);
+    -moz-box-shadow: 0px 0px 2px 10px rgba(151,216,178,0.1);
 }
 .lista-footer-hola li:active {
     box-shadow: 0px 0px 14px 4px rgba(255,255,255,0.75);
