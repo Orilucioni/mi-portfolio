@@ -4,46 +4,46 @@ body {
     color: #97D8B2;
     font-family:'Roboto', sans-serif;
     font-size: 14px;
-}
+    }
 
 ul {
     padding: 0;
-}
+    }
 
 li {
     list-style: none;
-}
+    }
 
 h2 {
     font-size: 3em ;
     font-weight: bold;
-}
+    }
 
 h1 {
     font-size: 4em;
     color: rgb(255, 255, 255);
-}
+    }
 
-p {
+p  {
     font-size: 1.2em;
-}
+    }
 
-a {
+a  {
     text-decoration: none;
     color:#97D8B2
-}
+    }
 
-@media (max-width: 615px)
-{
+@media (max-width: 615px) {
     h2 {
         font-size: 2.5em;
     }
-} 
+    }    
+
+/* Hasta aqui utilice selectores de etiquetas para especificar los estilos que tendran esas etiquetas que poseen poca especificidad */
 
 header {
     display: flex;
     width: 100%;
-    /* justify-content: flex-end; */
     box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
@@ -55,12 +55,12 @@ header {
 
 nav {
     display: flex;
-    margin: 1%;
     justify-content: flex-end;
     width: 100%;
+    margin: 1%;
     align-items: center;
-    
-}
+    }
+
 .nav-lista {
     display: flex;
     width: 70%;
