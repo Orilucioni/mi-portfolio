@@ -43,7 +43,7 @@ a {
 header {
     display: flex;
     width: 100%;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
@@ -88,6 +88,7 @@ nav {
     border-radius: 20px;
     width: 150px;
     justify-content: center;
+    transition: 0.3s; hover; active;
 }
 .nav-a-contacto:hover {
     color: #97D8B2;
@@ -110,7 +111,6 @@ li :focus {
     -webkit-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
     -moz-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
     border: none;
-
 }
 .nav-lista a:focus {
     border: none;
@@ -139,7 +139,6 @@ li :focus {
 .presentacion h1 {
     margin-top: 0;
     margin-bottom: 1%;
-    font-weight: bolder;
 }
 .presentacion-parrafo-a {
     margin-top: 9%;
@@ -153,13 +152,12 @@ li :focus {
     text-align: center;
     padding: 3% 8%;
     font-size: 1em;
+    transition: 0.3s; hover; focus;
     
 }
 .lo-que-hago:hover {
     background-color: #6c1d6c;
-    box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
-    -webkit-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
-    -moz-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
+
 }
 
 .lo-que-hago:focus {
@@ -187,7 +185,10 @@ img {
     .container-presentacion {
         flex-direction: column;
         text-align: center;
-        align-items: center
+        align-items: center;
+    }
+    h1 {
+        font-size: 3.8em ;
     }
     nav {
         display: none;
@@ -195,7 +196,7 @@ img {
 }
 @media (max-width:758px) {
     h1 {
-        font-size: 3em;
+        font-size: 2.9em;
     }
     figure {
         width: 100%;
@@ -207,25 +208,20 @@ img {
 
 @media (max-width:361px) {
     h1 {
-        font-size: 2.5em;
+        font-size: 2.4em;
+        width: 100%;
     }   
-}
-@media (max-width:319px) {
-    h1 {
-        font-size: 2.2em;
+    .presentacion h3{
+        font-size: 2em;        
     }
-
 }
-
-
 
 .container-mis-conocimientos {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 10% 5% 10% 5%;
-
+    margin: 12% 5%;
 }
 
 .container-mis-conocimientos p{
@@ -288,11 +284,16 @@ img {
 }
 .cita-titulo{
     font-size: 2em;
-    
+    margin-bottom: 5%; 
 }
+
 .container-cita p {
-    width: 70%;
-    margin-top: 5%;
+    width: 70%;  
+}
+
+.container-cita i {
+    font-size: 8em;
+    margin-top: 3%;
 }
 
 @media (max-width:998px) {
@@ -321,20 +322,13 @@ img {
 .container-mis-proyectos {
     display: flex;
     flex-wrap: wrap;
-    width: 74%;
-    
+    width: 71%;   
 }
 
 .mis-proyectos p {
     width: 50%;
     margin-bottom: 4%;
     margin-top: 0;
-}
-.mis-proyectos a {
-    margin: 1.5%;
-    width: 340px;
-    height: 350px;
-    border-radius: 10px;
 }
 
 .mis-proyectos article {
@@ -345,22 +339,29 @@ img {
     -webkit-box-shadow: 10px 10px 37px 0px rgba(0,0,0,0.42);
     -moz-box-shadow: 10px 10px 37px 0px rgba(0,0,0,0.42);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-.mis-proyectos article:hover {
-    border: 1px #97D8B2 solid;
+    width: 330px;
+    height: 350px; 
+    margin: 1%;
 }
 
-.mis-proyectos figure {
-    margin: 2%;
-    width: 300px;
-    height: 200px;
-    padding: 8%;
+.mis-proyectos article:hover {
+    border: #97D8B2 solid 1px;
+    
+}
+.mis-proyectos a {
+    width: 100%;
+    height: 100%;
     display: flex;
-    margin-top: 4%;
+    flex-direction: column;
+    align-items: center;
+
+}
+.mis-proyectos figure {
+    width: 280px;
+    height: 230px;
+    display: flex;
+    margin: 1%;
+    padding: 5%;
 }
 
 .mis-proyectos img {
@@ -371,23 +372,20 @@ img {
     object-position: center;
     object-fit: cover;
 }
-
-.mis-proyectos article:hover {
-    border: #97D8B2 solid 1px;
+.mis-proyectos a:hover {
     color: white;
 }
-
 
 .mis-proyectos a:focus {
     box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
     -webkit-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
     -moz-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
-    
+    color: white;    
 }
 
-@media (max-width:1250px) {
+@media (max-width:1285px) {
     .container-mis-proyectos 
-    { width: 750px;
+    { width: 700px;
     }
 }
 @media (max-width:824px) {
@@ -395,18 +393,19 @@ img {
     { width: 90%;
       justify-content: center;
     }
-    .container-mis-proyectos a {
+    .container-mis-proyectos article {
         margin: 5%;
     }
 } 
-@media (max-width:392px) {
-    .container-mis-proyectos a {
-        width: 80%;
-        height: 270px;
+@media (max-width:360px) {
+    .container-mis-proyectos article {
+        width: 90%;
+        height: 300px;
     }
     .container-mis-proyectos figure {
         width: 80%;
         height: 60%;
+        margin-top: 3%;
     }
 }
 
@@ -446,6 +445,7 @@ img {
 }
 .lista-contactame a {
     padding: 2%;
+    width: 100%;
 }
 
 .lista-contactame i{
@@ -460,8 +460,6 @@ img {
     background-color: #97D8B2;
     border: 1px, solid,#97D8B2;
 }
-
-
 
 .escribeme {
     margin: 5%;
@@ -513,20 +511,14 @@ label {
     font-size: 1em;
     padding: 3%;
     margin-top: 0;
+    transition: 0.3s; hover; focus;
 }
 #submit:hover {
-    background-color: #6c1d6c;
-    box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
-    -webkit-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
-    -moz-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
+    background-color: #290a29;
 }
-#submit:active {
-    background-color: #27051e;
-    box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
-    -webkit-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
-    -moz-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
-}
+
 #submit:focus {
+    background-color: #27051e;
     box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
     -webkit-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
     -moz-box-shadow: 1px 0px 19px 3px rgba(222,255,236,0.51);
@@ -576,7 +568,7 @@ label :focus {
     .lista-contactame li {
        display: inline;
         width: 100%;
-        font-size: 1em;
+        font-size: 0.9em;
     }
     .container-contactame-escribeme p {
         width: 95%;
@@ -654,10 +646,3 @@ footer {
         margin: 0 10%;
     }
 }
-
-/* PROPAGACION
-header:hover .encabezado, h2, footer:hover .sub-list {
-} */
-
-/* ICON POSITION DISPLAY NONE, VALID DISPLAY BLOCK E INVALID
-TIENE JAVA */
