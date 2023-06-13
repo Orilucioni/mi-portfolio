@@ -1,14 +1,13 @@
-#  :sparkles: ¡Buenas! Bienvenidas   :sparkles:
-Este es el primer portfolio creado para la cursada de ADA. Para este proyecto se utilizo **HTML** y **CSS**.
-A traves del siguiente [link](https://orilucioni.github.io/mi-portfolio/) pueden visualizar mi primer sitio web. 
+# :sparkles: ¡Buenas! Bienvenidas :sparkles: 
+Este es el primer portfolio creado para la cursada de ADA. Para este proyecto se utilizo HTML y CSS. A traves del siguiente [link](https://github.com/Orilucioni/mi-portfolio) pueden visualizar mi primer sitio web.
 
-##  :small_orange_diamond: Criterios de aceptación
+## :large_orange_diamond:  Criterios de aceptación 
 Los requisitos mínimos para que el proyecto sea considerado para la entrega son:
 
--Se debe respetar el siguiente diseño
--Pueden modificarse colores, tipografías e imágenes
+- Se debe respetar el siguiente diseño -Pueden modificarse colores, tipografías e imágenes
 
 El portfolio debe contar con:
+
 - Header con links de navegación
 - Sección de presentación
 - Sección de habilidades
@@ -20,12 +19,11 @@ El portfolio debe contar con:
 - Al clickear en los links de contacto, debe llevar a la página externa correspondiente
 - El portfolio debe tener un diseño responsivo y verse correctamente en distintos dispositivos (especialmente mobile)
 - El portfolio debe estar deployado y ser accesible desde una URL
-- El repositorio en GitHub debe tener un readme adecuado
-(*) Los proyectos los irás agregando a medida que los vayas finalizando en los siguientes módulos
+- El repositorio en GitHub debe tener un readme adecuado (*) Los proyectos los irás agregando a medida que los vayas finalizando en los siguientes módulos
 
-##   :small_orange_diamond: Criterios de evaluación
-Menos de 6 (No aprobado)
-Aprobado:
+## :large_orange_diamond: Criterios de evaluación
+Menos de 6 (No aprobado) Aprobado:
+
 - Estructura correcta de documento HTML
 - Respeta la consigna
 - Respeta el diseño dado
